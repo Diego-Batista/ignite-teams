@@ -1,9 +1,12 @@
 import LogoImage from '@assets/logo.png';
-import { Container, Logo } from "./styles";
+import { BackButton, BackIcon, Container, Logo } from "./styles";
 
 export function Header() {
     return (
         <Container>
+            <BackButton>
+                <BackIcon />
+            </BackButton>
             <Logo source={LogoImage}/>
         </Container>
     )
