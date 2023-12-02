@@ -18,7 +18,7 @@ export function NewGroup(){
                 />
 
                 <Input 
-
+                    placeholder="Nome do evento"
                 />
 
                 <Button 
