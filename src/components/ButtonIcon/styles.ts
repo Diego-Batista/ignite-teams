@@ -4,11 +4,10 @@ import styled from "styled-components/native"
 export type ButtonIconStyleProps = 'PRIMERY' | 'SECONDARY'
 
 type Props = {
-    type: ButtonIconStyleProps
+    type?: ButtonIconStyleProps
 }
 
-
-export const Container = styled.View`
+export const Container = styled.TouchableOpacity`
     width: 56px;
     height: 56px;
 
