@@ -7,7 +7,7 @@ const { Navigator, Screen } = createNativeStackNavigator()
 
 export function AppRoutes(){
     return (
-        <Navigator>
+        <Navigator screenOptions={{ headerShown: false }}>
 
             <Screen 
                 name="groups"
@@ -23,7 +23,7 @@ export function AppRoutes(){
                 name="players"
                 component={Players}
             />
-            
+
         </Navigator>
     )
 }
