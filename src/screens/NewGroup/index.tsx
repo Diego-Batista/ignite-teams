@@ -14,13 +14,13 @@ export function NewGroup(){
 
     const navigation = useNavigation()
 
-    function handleNew() {
+    async function handleNew() {
        try {
         if(group.trim().length === 0) {
             return Alert.alert('Novo Grupo', 'Informe o nome do truma.');
         }
 
-        groupCreate(group)
+        await groupCreate(group)
         navigation.navigate('players', { group })
        } catch (error) {
         if (error instanceof AppError) {
