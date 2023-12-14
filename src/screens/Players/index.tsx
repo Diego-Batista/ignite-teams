@@ -39,6 +39,7 @@ export function Players() {
     
         try {
           await playerAddByGroup(newPlayer, group);
+          fetchPlayersByTeam();
           setNewPlayerName('');
         } catch (error) {
           if(error instanceof AppError){
